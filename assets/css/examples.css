@@ -348,3 +348,13 @@ td {
   background-position: 0 -52px;
 }
 
+.navigation {
+  margin: 2em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0 .5em 0 0;
+}
