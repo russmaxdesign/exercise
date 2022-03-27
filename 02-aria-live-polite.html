@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DEVELOPER EXERCISE: aria-live="polite"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+<h1>DEVELOPER EXERCISE: <code>aria-live="polite"</code></h1>
+<p><a href="">Dummy link before</a></p>
+<h2>Instructions:</h2>
+<ol>
+  <li>Add <code>aria-live="polite"</code> to the <code>message</code> container.</li>
+  <li>Using a screen reader, begin manually navigating through the page.</li>
+  <li>After 10 seconds, was the message announced:
+    <ul>
+      <li>Automatically: over the top of everything else?</li>
+      <li>Automatically: At the first gracefull pause?</li>
+      <li>Only if navigating across the message itself?</li>
+    </ul>
+  </li>
+</ol>
+<h2>Example</h2>
+
+
+<!-- EXAMPLE STARTS HERE -->
+<div id="message" class="warning" aria-live="polite"></div>
+<!-- EXAMPLE ENDS HERE -->
+
+
+<p>Not all that Mrs. Bennet, however, with the assistance of her five daughters, could ask on the subject, was sufficient to draw from her husband any satisfactory description of Mr. Bingley. They attacked him in various ways--with barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all, and they were at last obliged to accept the second-hand intelligence of their neighbour, Lady Lucas. Her report was highly favourable.</p>
+<p>Sir William had been delighted with him. He was quite young, wonderfully handsome, extremely agreeable, and, to crown the whole, he meant to be at the next assembly with a large party. Nothing could be more delightful! To be fond of dancing was a certain step towards falling in love; and very lively hopes of Mr. Bingley's heart were entertained.</p>
+<p><a href="">Dummy link before</a></p>
+
+<script type="text/javascript">
+  (function()
+  {
+    window.setTimeout(function()
+    {
+      document.getElementById('message').innerHTML = '<p><strong>Hello:</strong> This is a warning notification.</p>';
+    }, 10000);
+
+  })();
+</script>
+</body>
+</html>
